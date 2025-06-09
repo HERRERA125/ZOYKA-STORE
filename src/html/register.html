@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="/src/css/styles_register.css" />
+    <script src="data_users.js" defer></script>
+  </head>
+  <body>
+    <div class="registro-container">
+      <h2>¡Regístrate!</h2>
+
+      <div class="form-group">
+        <input type="text" id="nombre"placeholder="Nombre completo" required />
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="correo" placeholder="Correo" required />
+      </div>
+
+      <div class="form-group password">
+        <input type="password" id="contrasena" placeholder="Contraseña" required />
+        <span class="eye">👁️</span>
+      </div>
+
+      <p class="mascota-label">¿Tienes mascota?</p>
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="perro"/> Perro</label>
+        <label><input type="checkbox" id="gato"/> Gato</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label class="politicas">
+          <input type="checkbox" required />
+          Acepto <a href="#">términos y condiciones</a> y <a href="#">autorizo tratamiento
+          de datos y políticas.</a>
+        </label>
+      </div>
+
+      <button class="crear-cuenta" onclick="guardarRegistro()">Crear cuenta</button>
+
+      <a href="login.html" class="tengo-cuenta"
+        >¿Ya tienes cuenta? Inicia sesión</a
+      >
+
+  </body>
+</html>

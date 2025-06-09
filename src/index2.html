@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laika - Todo para tu mascota</title>
+    <link rel="stylesheet" href="/src/css/styles_index2.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-content">
+            <div class="logo">
+              <i class="fas fa-dog"></i>
+              <span>ZOYKA</span>
+            </div>
+            <div class="search-bar">
+              <input type="text" placeholder="¿Qué necesita tu mascota?" />
+              <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-actions">
+              <button class="btn-location">
+                <i class="fas fa-map-marker-alt"></i>
+                Agregar dirección
+              </button>
+              <a href="/src/html/register.html">
+              <button class="btn-account">
+                <i class="fas fa-user"></i>
+                Inicia o Crear cuenta
+              </button>
+              </a>
+              <button class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <div class="container">
+          <ul class="nav-menu">
+            <li class="nav-item dropdown">
+              <a href="#"
+                ><i class="fas fa-dog"></i> Perro
+                <i class="fas fa-chevron-down"></i
+              ></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#"
+                ><i class="fas fa-cat"></i> Gato
+                <i class="fas fa-chevron-down"></i
+              ></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="#">Servicios <i class="fas fa-chevron-down"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Promociones</a>
+            </li>
+            <li class="nav-item">
+              <a href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <!-- Carrusel de productos -->
+    <section class="carousel">
+      <div class="slide active">
+        <img
+          src="/src/img/carrousel/9071c84e5904ef63b7640cc6d33ac04e_1747437597.jpg"
+          alt="Producto 1"
+        />
+      </div>
+      <div class="slide">
+        <img
+          src="/src/img/carrousel/a62a9ac9349c5ef21b42fbe9230c477b_1747436520.jpg"
+          alt="Producto 2"
+        />
+
+
+      <!-- Navegación de puntos -->
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <div class="container">
+        <h2>Categorías</h2>
+        <div class="categories-grid">
+          <div class="category-item">
+            <div class="category-icon">
+              <img
+                src="/src/img/Icons Laika/categoria_alimento-min.png"
+                alt="Alimento"
+              />
+            </div>
+            <h3>Alimento</h3>
+          </div>
+
+          <div class="category-item">
+            <div class="category-icon">
+              <img
+                src="/src/img/Icons Laika/happy_flash_web.png"
+                alt="Happy Flash"
+              />
+            </div>
+            <h3>Happy Flash</h3>
+          </div>
+          <div class="category-item">
+            <div class="category-icon">
+              <img
+                src="/src/img/Icons Laika/categoria_cachorros.png"
+                alt="Cachorros"
+              />
+            </div>
+            <h3>Cachorros</h3>
+          </div>
+          <div class="category-item">
+            <div class="category-icon">
+              <img
+                src="/src/img/Icons Laika/categoria_juguetes.png"
+                alt="Juguetes"
+              />
+            </div>
+            <h3>Juguetes</h3>
+          </div>
+          <div class="category-item">
+            <div class="category-icon">
+              <img
+                src="/src/img/Icons Laika/categoria_farmacia.png"
+                alt="Farmapet"
+              />
+            </div>
+            <h3>Farmapet</h3>
+          </div>
+          <div class="category-item">
+            <div class="category-icon">
+              <img
+                src="/src/img/Icons Laika/categoria_accesorios.png"
+                alt="Accesorios"
+              />
+            </div>
+            <h3>Accesorios</h3>
+          </div>
+          <div class="category-item">
+            <div class="category-icon">
+              <img
+                src="/src/img/Icons Laika/categoria_higiene.png"
+                alt="Cuidado e Higiene"
+              />
+            </div>
+            <h3>Cuidado e Higiene</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="container">
+        <h2>Encuentra todo para tus peludos en un solo lugar</h2>
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-shipping-fast"></i>
+            </div>
+            <h3>Entregas el mismo día</h3>
+            <p>Entregamos todo lo que necesitas, cuando lo necesitas</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <h3>Pago online o contra entrega</h3>
+            <p>
+              Escoge tu método de pago. ¡No te preocupes! contamos con pasarelas
+              de pagos certificadas y seguras
+            </p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">
+              <i class="fas fa-box"></i>
+            </div>
+            <h3>Todo lo que necesitas</h3>
+            <p>
+              Contamos con más de 4.000 productos y servicios. Encuentra todo lo
+              que necesitas para tu peludo
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Laika Card -->
+    <section class="laika-card-section">
+      <div class="container">
+        <div class="card-banner">
+          <div class="card-content">
+            <h2>
+              La única <span class="highlight">Tienda</span> para <br /><span
+                class="highlight"
+                >Petlovers</span
+              >
+              de corazón
+            </h2>
+          </div>
+          <div class="card-visual">
+            <img src="/src/img/gatos/gato1.png" alt="Tarjeta Laika" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="brands">
+      <div class="container">
+        <h2>¡Más de 100 marcas disponibles!</h2>
+        <div class="brands-grid">
+          <div class="brand-item">
+            <img
+              src="/src/img/Icons marcas/nutra_nuggets_circulo3.jpg"
+              alt="Nutra Nuggets"
+            />
+          </div>
+          <div class="brand-item">
+            <img
+              src="/src/img/Icons marcas/1589395980_ROYAL_CANIN_500X500.png"
+              alt="Royal Canin"
+            />
+          </div>
+          <div class="brand-item">
+            <img src="/src/img/Icons marcas/hills_circulo5.png" alt="Hill's" />
+          </div>
+          <div class="brand-item">
+            <img
+              src="/src/img/Icons marcas/COMBO_1_SUR.jpg"
+              alt="Taste of the Wild"
+            />
+          </div>
+          <div class="brand-item">
+            <img
+              src="/src/img/Icons marcas/proplan_circulo1.jpg"
+              alt="Pro Plan"
+            />
+          </div>
+          <div class="brand-item">
+            <img src="/src/img/Icons marcas/total_max_circulo3.png" alt="Max" />
+          </div>
+          <div class="brand-item">
+            <img
+              src="/src/img/Icons marcas/EQUILIBRIO_CIRCULO3.jpg"
+              alt="Equilibrio"
+            />
+          </div>
+          <div class="brand-item">
+            <img
+              src="/src/img/Icons marcas/BR_FOR_DOG_CIRCULO.jpg"
+              alt="BR Dog Pure"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+      <div class="container">
+        <div class="section-header">
+          <h2>Favoritos Laika</h2>
+          <div class="nav-arrows">
+            <button class="nav-arrow prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="nav-arrow next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-badge">3%</div>
+            <div class="product-image">
+              <img
+                src="/src/img/productos/2626_Smartbones_Pollo_Mini_8_Unidades_500X500.jpg"
+                alt="Besties Huesos"
+              />
+            </div>
+            <h3>Besties - Huesos Masticables Medianos M...</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">
+              <span class="current-price">$17.000</span>
+              <span class="original-price">$20.000</span>
+            </div>
+            <div class="member-price">
+              <span class="price-label">LAIKA Member</span>
+              <span class="price-value">$17.000</span>
+            </div>
+            <div class="product-sizes">
+              <button class="size-btn active">5 Und</button>
+            </div>
+            <button class="btn-add-cart">Agregar al carrito</button>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badge">5%</div>
+            <div class="product-image">
+              <img
+                src="/src/img/productos/2d3e5bc54e7edd029a290fa69193397b_1673042473.jpg"
+                alt="Happy Barf"
+              />
+            </div>
+            <h3>Happy Barf - Alimento Congelado Sabor Beef</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">
+              <span class="current-price">$3.182</span>
+              <span class="original-price">$3.700</span>
+            </div>
+            <div class="member-price">
+              <span class="price-label">ZOYCA Member</span>
+              <span class="price-value">$3.182</span>
+            </div>
+            <div class="product-sizes">
+              <button class="size-btn">300 GR</button>
+              <button class="size-btn active">500 GR</button>
+              <button class="size-btn">750 GR</button>
+            </div>
+            <button class="btn-add-cart">Agregar al carrito</button>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badge">3%</div>
+            <div class="stock-badge">Últimas Unidades</div>
+            <div class="product-image">
+              <img
+                src="/src/img/productos/463_62519_Royal_Canin_Medium_Adulto_1616625484_2186x2186.jpg"
+                alt="Royal Canin"
+              />
+            </div>
+            <h3>Royal Canin - Medium Adult</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">
+              <span class="current-price">$170.384</span>
+              <span class="original-price">$185.200</span>
+            </div>
+            <div class="member-price">
+              <span class="price-label">ZOYCA Member</span>
+              <span class="price-value">$170.384</span>
+            </div>
+            <div class="product-sizes">
+              <button class="size-btn active">4 KG</button>
+              <button class="size-btn">15 KG</button>
+            </div>
+            <button class="btn-add-cart">Agregar al carrito</button>
+          </div>
+
+          <div class="product-card">
+            <div class="product-badge">3%</div>
+            <div class="stock-badge">Últimas Unidades</div>
+            <div class="product-image">
+              <img
+                src="/src/img/productos/83b5009e040969ee7b60362ad7426573_1706649969.jpeg"
+                alt="Smartbones"
+              />
+            </div>
+            <h3>Smartbones Pollo Mini X 8 Unidades</h3>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="price">
+              <span class="current-price">$18.360</span>
+              <span class="original-price">$20.400</span>
+            </div>
+            <div class="member-price">
+              <span class="price-label">ZOYKA Member</span>
+              <span class="price-value">$18.360</span>
+            </div>
+            <div class="product-sizes">
+              <button class="size-btn active">12 GR</button>
+            </div>
+            <button class="btn-add-cart">Agregar al carrito</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-dog"></i>
+              <span>ZOYKA</span>
+              <p>Por más momentos peludos</p>
+            </div>
+            <div class="social-links">
+              <h4>Síguenos en:</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>ACERCA DE ZOYKA</h4>
+            <ul>
+              <li><a href="#">Quiénes somos</a></li>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Trabaja con nosotros</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>LINKS DE INTERÉS</h4>
+            <ul>
+              <li><a href="#">Preguntas frecuentes</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Políticas de Entrega</a></li>
+              <li><a href="#">Mapa del Sitio</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>NUESTRAS TIENDAS</h4>
+            <ul>
+              <li>Unicuses</li>
+              <li>Dirección: Cl. 14 Nte. #8N-35, Granada, Cali, Valle del Cauca</li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>INFORMACIÓN</h4>
+            <p>Teléfono: 3137700791</p>
+            <p>Cali Valle del cauca, Colombia</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>SUSCRÍBETE</h4>
+            <p>Recibe noticias y promociones al instante.</p>
+            <div class="newsletter">
+              <input type="email" placeholder="Correo electrónico" />
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <label class="checkbox-label">
+              <input type="checkbox" />
+              He leído y acepto las políticas de privacidad
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="whatsapp-float">
+        <a href="#" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </footer>
+
+    <script src="/src/js/index2.js"></script>
+  </body>
+</html>

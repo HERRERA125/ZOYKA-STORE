@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0 url("https://via.placeholder.com/1200x600") no-repeat
+    center center fixed;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.registro-container {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.registro-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form-group.password {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  cursor: pointer;
+}
+
+.mascota-label {
+  font-size: 15px;
+  text-align: left;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.checkbox-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.checkbox-group label {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 15px;
+  color: #333;
+}
+
+.politicas {
+  font-size: 14px;
+}
+
+.politicas a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.crear-cuenta {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #6b47b6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.tengo-cuenta {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  font-size: 15px;
+  color: #6b47b6;
+  background-color: white;
+  border: 2px solid #6b47b6;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.divider {
+  width: 40px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 10px;
+  margin: 25px auto;
+}
+
+.tengo-cuenta {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  color: #6b47b6;
+  background-color: white;
+  border: 2px solid #6b47b6;
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}

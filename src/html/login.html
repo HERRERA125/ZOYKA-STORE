@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="/src/css/styles_login.css" />
+    <script src="/src/js/data_users.js" defer></script>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>¡Bienvenido de nuevo!</h2>
+
+      <div class="form-group">
+        <input type="email" id="login-correo" placeholder="Correo" required />
+      </div>
+
+      <div class="form-group password">
+        <input
+          type="password"
+          id="login-contrasena"
+          placeholder="Contraseña"
+          required
+        />
+        <span class="eye">👁️</span>
+      </div>
+
+      <a href="#" class="forgot">¿Olvidó su contraseña?</a>
+
+      <button class="login-button" onclick="validarLogin()">
+        Iniciar Sesión
+      </button>
+
+      <a href="register.html" class="register-button"
+        >¿Cliente nuevo? Regístrate aquí</a
+      >
+    </div>
+  </body>
+</html>
